@@ -1,0 +1,26 @@
+{
+  "private": true,
+  "dependencies": {
+    "docs": "0.0.0-37",
+    "esdoc": "^1.1.0",
+    "esdoc-standard-plugin": "^1.0.0",
+    "save-dev": "^2.0.0",
+    "todomvc-app-css": "^2.0.1",
+    "todomvc-common": "^1.0.1"
+  },
+  "scripts": {
+    "docs": "./node_modules/.bin/jsdoc -c jsdoc.json"
+  },
+  "devDependencies": {
+    "jasmine": "^3.4.0",
+    "jasmine-core": "^2.0.0",
+    "jsdoc": "^3.6.2"
+  }
+}
+{
+  "source": "./src",
+  "destination": "./docs",
+  "plugins": [
+    {"name": "esdoc-standard-plugin"}
+  ]
+}
